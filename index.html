@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/Style_index.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+<link rel="stylesheet" href="less/Style_index.less" />
+</head>
+
+<body>
+<div class="wrapOutter">
+	<div class="container">
+    	<div class="player1 player" id="p1">
+        	<div class="head"></div>
+            <div class="userScore"></div>
+            <ul class="dicePosList">
+            	<li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+            </ul>
+            <ul class="scoreList1 scoreList" id="s1">
+            	<li class="t1 tt"><span class="score"></span><span class="task"></span></li>
+                <li class="t2 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t3 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t4 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t5 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t6 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t7 tt"><span class="task"></span></span><span class="score"></span></li>
+                <li class="t8 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t9 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t10 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t11 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t12 tt"><span class="task"></span><span class="score lastScore"></span></li>
+            </ul>
+        </div>
+        <div class="player2 player" id="p2">
+        	<div class="head"></div>
+            <div class="userScore"></div>
+            <ul class="dicePosList">
+            	<li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+            </ul>
+            <ul class="scoreList2 scoreList" id="s2">
+            	<li class="t1 tt"><span class="score"></span><span class="task"></span></li>
+                <li class="t2 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t3 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t4 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t5 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t6 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t7 tt"><span class="task"></span></span><span class="score"></span></li>
+                <li class="t8 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t9 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t10 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t11 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t12 tt"><span class="task"></span><span class="score lastScore"></span></li>
+            </ul>
+        </div>
+        <div class="player3 player" id="p3">
+        	<div class="head"></div>
+            <div class="userScore"></div>
+            <ul class="dicePosList">
+            	<li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+            </ul>
+            <ul class="scoreList3 scoreList" id="s3">
+            	<li class="t1 tt"><span class="score"></span><span class="task"></span></li>
+                <li class="t2 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t3 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t4 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t5 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t6 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t7 tt"><span class="task"></span></span><span class="score"></span></li>
+                <li class="t8 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t9 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t10 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t11 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t12 tt"><span class="task"></span><span class="score lastScore"></span></li>
+            </ul>
+        </div>
+        <div class="player4 player" id="p4">
+        	<div class="head"></div>
+            <div class="userScore"></div>
+            <ul class="dicePosList">
+            	<li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+                <li class="dicePos" data-dice='0'></li>
+            </ul>
+            <ul class="scoreList4 scoreList" id="s4">
+            	<li class="t1 tt"><span class="score"></span><span class="task"></span></li>
+                <li class="t2 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t3 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t4 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t5 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t6 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t7 tt"><span class="task"></span></span><span class="score"></span></li>
+                <li class="t8 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t9 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t10 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t11 tt"><span class="task"></span><span class="score"></span></li>
+                <li class="t12 tt"><span class="task"></span><span class="score lastScore"></span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="dice">
+        <ul class="dice" id="dice1" data-point='1'>
+        	<li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+            <li data-num="4"></li>
+            <li data-num="5"></li>
+            <li data-num="6"></li>
+        </ul> 
+        <ul class="dice" id="dice2" data-point='1'>
+        	<li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+            <li data-num="4"></li>
+            <li data-num="5"></li>
+            <li data-num="6"></li>
+        </ul> 
+        <ul class="dice" id="dice3" data-point='1'>
+        	<li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+            <li data-num="4"></li>
+            <li data-num="5"></li>
+            <li data-num="6"></li>
+        </ul> 
+        <ul class="dice" id="dice4" data-point='1'>
+        	<li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+            <li data-num="4"></li>
+            <li data-num="5"></li>
+            <li data-num="6"></li>
+        </ul> 
+        <ul class="dice" id="dice5" data-point='1'>
+        	<li data-num="1"></li>
+            <li data-num="2"></li>
+            <li data-num="3"></li>
+            <li data-num="4"></li>
+            <li data-num="5"></li>
+            <li data-num="6"></li>
+        </ul>    
+        <div id="dicePosPoint">
+            <div class="diceDetail" data-point='0' data-pos='1'></div>
+            <div class="diceDetail" data-point='0' data-pos='2'></div>
+            <div class="diceDetail" data-point='0' data-pos='3'></div>
+            <div class="diceDetail" data-point='0' data-pos='4'></div>
+            <div class="diceDetail" data-point='0' data-pos='5'></div>
+        </div>
+        <button id="roll">ROLL</button>
+        <button id="restart">Restart</button>
+    </div>  
+        
+    </div>
+    
+    <div id="scoreListOutter">
+    	<ul id="scoreList">
+        	<li></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
